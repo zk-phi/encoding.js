@@ -2,7 +2,7 @@ var util = require('./util');
 var EncodingTable = require('./encoding-table');
 
 // Fallback character when a character can't be represented
-exports.FALLBACK_CHARACTER = 0; // NUL
+exports.FALLBACK_CHARACTER = 63; // '?'
 
 var HAS_TYPED = exports.HAS_TYPED = typeof Uint8Array !== 'undefined' && typeof Uint16Array !== 'undefined';
 
